@@ -1,4 +1,4 @@
-project(Printing-Allocator)
+project(Allocators)
 
 # to shut up cmake, I have no clue what version this needs:
 cmake_minimum_required(VERSION 2.8)
@@ -20,7 +20,7 @@ set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -std=c++14" )
 
 include_directories("include")
 
-file(GLOB library_headers "include/pa/*.hpp")
+file(GLOB library_headers "include/alloc/*.hpp")
 file(GLOB demo_file "src/demo/main.cpp")
 
 add_executable(demo ${demo_file})
